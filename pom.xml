@@ -12,7 +12,7 @@
     <artifactId>mybatistest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mybatistest</name>
-    <description>我的第一个Mybatis工程项目</description>
+    <description>我的Git上第一个SpringBoot+Mybatis工程项目</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
