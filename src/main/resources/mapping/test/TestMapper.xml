@@ -14,8 +14,8 @@
         <result column="LASTUPUSER" property="lastupuser" jdbcType="VARCHAR"/>
         <result column="CHINESENAME" property="chinesename" jdbcType="VARCHAR"/>
     </resultMap>
-    <!--查询 其他都一样-->
-    <select id="findAllUser" resultMap="klyErpUser">
+    <!--查询 其他都一样     resultType="com.mybatistest.entity.TestEntity"也可以 -->
+    <select id="findAllUser" resultMap="klyErpUser" >
       select * from KLYUSERBASETABLE where userid<![CDATA[ > ]]>180 and userid <![CDATA[ < ]]>194
 	</select>
 
