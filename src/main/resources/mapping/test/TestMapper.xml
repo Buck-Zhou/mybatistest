@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatistest.mapper.TestMapper" >
+    <resultMap id="klyErpUser" type="com.mybatistest.entity.TestEntity">
+        <id column="USERID" property="userId" jdbcType="INTEGER"/>
+        <result column="USERNAME" property="userName" jdbcType="VARCHAR"/>
+        <result column="USERPASSWORD" property="userPassword" jdbcType="VARCHAR"/>
+        <result column="USERINDEPT" property="userInDept" jdbcType="VARCHAR"/>
+        <result column="USERROLE" property="userRole" jdbcType="VARCHAR"/>
+        <result column="CREATIONDATETIME" property="creationDatetime" jdbcType="TIMESTAMP"/>
+        <result column="CREATIONUSER" property="creationUser" jdbcType="VARCHAR"/>
+        <result column="LASTUPDATEDATETIME" property="lastUpDateDateTime" jdbcType="TIMESTAMP"/>
+        <result column="LASTUPUSER" property="lastupuser" jdbcType="VARCHAR"/>
+        <result column="CHINESENAME" property="chinesename" jdbcType="VARCHAR"/>
+    </resultMap>
+    <!--查询 其他都一样-->
+    <select id="findAllUser" resultMap="klyErpUser">
+      select * from KLYUSERBASETABLE where userid<![CDATA[ > ]]>180 and userid <![CDATA[ < ]]>194
+	</select>
+
+</mapper>
